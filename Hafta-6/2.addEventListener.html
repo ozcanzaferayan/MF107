@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Tikla</button>
+    <!-- icerigi event listenerlar ile degistirecegiz. -->
+    <h1 id="sonuc"> </h1>  
+
+    <script>
+
+        //Giris: Elemanlarin cekilmesi, degiskenlerin olusturulmasi:
+
+        const btn = document.getElementById("btn");
+
+        const sonuc = document.getElementById("sonuc");
+
+        //Gelisme: Yapilacak islemlerin yurutulmesi:
+
+        btn.addEventListener("click", function () {
+            sonuc.innerHTML = "Hello";
+        });
+
+
+
+    </script>
+</body>
+
+</html>

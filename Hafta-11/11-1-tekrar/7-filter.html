@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="tekSayilar"></ul>
+    <ul id="ciftSayilar"></ul>
+
+    <script>
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // odd numbers
+      const odds = numbers.filter((n) => n % 2 === 1);
+      // even numbers
+      const evens = numbers.filter((n) => n % 2 === 0);
+
+      // Get html elements
+      const tekSayilar = document.getElementById("tekSayilar");
+      const ciftSayilar = document.getElementById("ciftSayilar");
+
+      tekSayilar.innerText = odds.join("-");
+      ciftSayilar.innerText = evens.join("-");
+    </script>
+  </body>
+</html>

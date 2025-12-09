@@ -1,0 +1,24 @@
+{
+  "houses": [
+    {
+      "id": "1",
+      "name": "Zaferin Yalısı",
+      "price": "3000$",
+      "images": [
+        "http://localhost:5174/1.jpeg",
+        "http://localhost:5174/2.jpeg",
+        "http://localhost:5174/3.jpeg"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Türkerin Malikanesi",
+      "price": "2500$",
+      "images": [
+        "http://localhost:5174/1.jpeg",
+        "http://localhost:5174/2.jpeg",
+        "http://localhost:5174/3.jpeg"
+      ]
+    }
+  ]
+}

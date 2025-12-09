@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: midnightblue;
+            color: white;
+            font-size: larger;
+        }
+    </style>
+    <script>    
+
+        //geriye deger dondurmeyen parametreli function
+        //alternatif function`lar, birbirinin overwrite`idir. c#`taki gibi overload`i degildir.
+        function selamVer(isim) {
+            document.writeln("<h1>" + "Merhaba " + isim + " Bey/Hanim.");
+        }
+        function selamVer(isim1, soyisim) {
+            document.writeln("<h1>" + "Merhaba " + isim1 + " " + soyisim + " Bey/Hanim.");
+        }
+        function selamVer(isim1, soyisim, yas) {
+            document.writeln("<h1>" + "Merhaba " + isim1 + " " + soyisim + " " + yas + " Bey/Hanim.");
+        }
+        //selamVer(33333);
+        // selamVer("Uzeyir",);
+        // selamVer("Serkan", "Kilickap");
+        selamVer("Melih", "Altinkiran", 17);
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

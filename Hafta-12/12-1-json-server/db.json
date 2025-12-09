@@ -1,0 +1,24 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Türker",
+      "surname": "TÜRK"
+    },
+    {
+      "id": "2",
+      "name": "Ayhan",
+      "surname": "YILMAZ"
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "name": "The Godtfather",
+      "director": "James Cameron",
+      "isDeleted": "1",
+      "payment_date": "06-10-2025",
+      "isMutant": "yes"
+    }
+  ]
+}

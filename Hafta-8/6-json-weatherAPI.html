@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 0. Adım arayuz olusturulur. -->
+
+    <div id="sicaklikDiv"></div>
+
+    <script>
+        //Dom islemlerinin gerceklestirilmesi
+
+
+        const sicaklikDiv = document.getElementById("sicaklikDiv");
+
+        async function getWeather() {
+            const API_URL = "https://api.openweathermap.org/data/2.5/weather?lat=40.9882728&lon=29.0343543&appid=7af7f5cd02de0873210bc25a798aa0f0&units=metric&lang=tr"
+
+            const res = await fetch(API_URL);
+            const weather = await res.json();
+            sicaklikDiv.innerHTML = weather.name;
+        }
+
+
+        getWeather();
+    </script>
+</body>
+
+</html>

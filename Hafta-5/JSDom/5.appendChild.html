@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul id="meyveler"></ul>
+
+    <script>
+
+        const meyveler = document.getElementById("meyveler");
+
+        const meyveListesi = ["Erik", "Uzum", "Mandalina"];
+        const renkListesi = ["Red", "Yellow", "Blue"];
+
+        for (let i = 0; i < meyveListesi.length; i = i + 1) {
+            const meyve = meyveListesi[i];
+            const renk = renkListesi[i];
+            const li = document.createElement("li");
+            li.innerHTML = meyve; 
+            li.style.backgroundColor = renk;
+            meyveler.appendChild(li);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

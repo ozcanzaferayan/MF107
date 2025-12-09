@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="foodlist">
+    </ul>
+    
+    <script>
+
+        const foodlist = document.getElementById("foodlist");
+        const foods = ["Dürüm","Ayran","Corba","Patates"];
+
+        for (let i = 0; i < foods.length; i++) {
+            const food = foods[i]; //zorunlu degil.
+            const li = document.createElement("li");
+            li.textContent = food;
+            foodlist.appendChild(li);
+        }
+
+    </script>
+</body>
+</html>

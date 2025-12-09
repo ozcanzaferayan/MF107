@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "model": "Runfalcon",
+      "brand": "Adidas",
+      "img": "https://images.unsplash.com/photo-1620794341491-76be6eeb6946?q=80&w=994"
+    },
+    {
+      "id": "2",
+      "model": "Airmax",
+      "brand": "Nike",
+      "img": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=994"
+    },
+    {
+      "id": "40a8",
+      "model": "asdasd",
+      "brand": "asics",
+      "img": "https://images.pexels.com/photos/18188493/pexels-photo-18188493.jpeg"
+    }
+  ]
+}

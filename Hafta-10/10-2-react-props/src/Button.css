@@ -1,0 +1,21 @@
+.btn {
+    padding-block: 8px;
+    padding-inline: 16px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 8px;
+    font-family: sans-serif;
+    display: inline-flex;
+}
+
+.btn-primary {
+    background-color: dodgerblue;
+}
+
+.btn-default {
+    background-color: gray;
+}
+
+.btn-danger {
+    background-color: tomato;
+}

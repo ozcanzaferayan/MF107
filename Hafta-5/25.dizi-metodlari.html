@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: midnightblue;
+            color: white;
+            font-size: xx-large;
+        }
+    </style>
+    <script>
+        //En cok kullanilan dizi metodlari/fonskiyonlari:
+
+        //map
+        //join
+        //push 
+        //pop
+        //shift
+        //unshift
+        //indexof
+        //lastindexof : belirtilen elemanin dizideki son siradaki indexini dondurur.
+        //includes : belirtilen elemanin dizide olup olmadigini boolean olarak dondurur
+        //slice: diziyi parcalar, 2 parametreli kullanilir (index), baslangic ve bitis indexi verilir. ikinci parametreyi dahil etmez.
+        //concat: iki veya daha fazla diziyi birlestirir.
+        //sort : dizideki elemanlari siralar. A`dan Z`ye- kucukten buyuge. orjinal diziyi degistirir.
+        //reverse: tersi demek. buyukten kucuge, Z`den A`ya siralama yapar. orjinal diziyi degistir.
+
+        const sayilar = [8, 2, 6, 9, 3, 2, 5, 4, 7, 2, 3, 1];
+        const sayilar2 = [11, 22, 33, 44, 55, 66];
+        //let index1 = sayilar.indexOf(2);
+        let index = sayilar.lastIndexOf(2);
+        let varMi1 = sayilar.includes(0);
+        let varMi2 = sayilar.includes(5);
+
+        let yeniDizi = sayilar.slice(3, 9);
+
+        // document.writeln(`${index} <br>`);
+        // document.writeln(`${varMi1} <br>`);
+        // document.writeln(`${varMi2} <br>`);
+
+        // for (let i = 0; i < yeniDizi.length; i++) {
+        //     document.writeln(`${yeniDizi[i]}`);
+        // }
+
+        document.writeln(`Orjinal sayi dizisi :`);        
+        for (let i = 0; i < sayilar.length; i++) {
+            document.writeln(`${sayilar[i]}`)
+        }        
+        document.writeln(`<br>`);
+
+        document.writeln(`Ikinci sayi dizisi :`);        
+        for (let i = 0; i < sayilar2.length; i++) {
+            document.writeln(`${sayilar2[i]}`)
+        }    
+
+        document.writeln(`<br>`);
+        let birlesikSayilar = sayilar.concat(sayilar2); //diziler birlestirildi.
+        
+        document.writeln(`Concat ile Birlestirilmis dizi: `);
+        for (let i = 0; i < birlesikSayilar.length; i++) {
+            document.writeln(`${birlesikSayilar[i]}`);
+        }
+        
+        document.writeln(`<br>`);
+        sayilar.sort(); //sayilari kucukten buyuge dogru siraladi. orjinal diziyi degistirdi.
+        
+        for (let i = 0; i < sayilar.length; i++) {
+            document.writeln(`${sayilar[i]}`)
+        }        
+        
+        
+        //Meyveleri siz siralayabilirsiniz.
+        
+        document.writeln(`<br>`);
+        sayilar.reverse();
+
+        for (let i = 0; i < sayilar.length; i++) {
+            document.writeln(`${sayilar[i]}`)
+        }        
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

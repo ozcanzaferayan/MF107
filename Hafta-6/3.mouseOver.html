@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Uzerime Gelin</button>
+
+    <h1 id="sonuc"></h1>
+    <script>
+
+        //1. Degiskenlerin ayarlanmasi.
+
+        const btn = document.getElementById("btn");        
+        const sonuc = document.getElementById("sonuc");
+
+        //Gelisme: addEventListener ile baglama 
+
+        btn.addEventListener("mouseover", function () {
+            sonuc.innerText = "Uzerime gelme";            
+        });        
+
+        btn.addEventListener("mouseout", function () {
+            sonuc.innerText = " ";
+        })
+    </script>
+</body>
+</html>

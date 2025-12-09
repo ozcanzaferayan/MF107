@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: midnightblue;
+            color: white;
+            font-size: xx-large;
+        }
+    </style>
+    <script>
+        // => lambda
+        // () => {} 
+
+        //kare hesaplayan (tek parametreli);
+        //dikdortgenin alanini hesaplayan (2 parametreli, uzun ve kisa)
+        //ucgenin alani (2 parametreli - taban ve yukseklik)
+
+        //template literals ile birlikte kullanarak sonucu ekrana gosterelim. Ornek;
+        //Ucgenin alani : 54
+
+        const karesi = (kenar) => kenar * kenar;
+        const dikdortgen = (uzun, kisa) => uzun * kisa;
+        let ucgeninAlani = (taban, yukseklik) => taban*yukseklik/2;
+
+        document.writeln(`Karesi : ${karesi(4)} <br>`); //karesini hesapladik
+        document.writeln(`Dikdortgenin alani : ${dikdortgen(7, 3)}`);
+        document.writeln(`Ucgenin alani : ${ucgeninAlani(9,6)}`)
+
+        
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 0. Adim : UL son hali olusturulur. -->
+    <ul id="peopleUl">
+        <li>Luke Skywalker</li>
+        <li>C-3PO</li>
+    </ul>
+
+
+    <!--  1. Adim : Script degiskenleri tanimlanir ve gerekli atamalar gerceklestirilir. -->
+    <script>
+
+        //2. Elemanlarin Getirilmesi
+
+        const peopleUl = document.getElementById("peopleUl");        
+
+        //3. Aksiyonlari alacak asenkron fonksiyonlarin tanimlanmasi.
+
+        async function getPeople() {
+            const API_URL = "https://swapi.dev/api/people/";
+            const res = await fetch(API_URL);
+            const data = await res.json();
+            const people = data.results;
+
+            const htmlArray = people.map((person) => `<li>${person.name}</li>`);
+            const htmlString = htmlArray.join(" ");
+
+            peopleUl.innerHTML = htmlString;
+        }
+
+        //Elemanlarin gosterilmesi.
+
+        getPeople();
+
+
+        //
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: midnightblue;
+            color: white;
+            font-size:larger;
+        }
+    </style>
+    <script>
+        let yiyecekler = ["Yumurta", "Sut", "Domates", "Ekmek"];
+        //push: dizinin sonuna belirtilen elemani ya da elemanlari ekler.
+        //pop: dizinin sonundaki elemani cikarir.
+        //unshift: dizinin basina eleman ekler
+        //shift : dizinin basindaki elemani cikarir
+        //indexOf: parametre icerisindeki elemanin index numarasini dondurur. eger parametredeki eleman dizide yoksa -1 dondurur.
+        yiyecekler.push("Yogurt","Muz");
+        //  yiyecekler.push("Muz");
+        yiyecekler.unshift("Patlican","Jelibon",1992);
+        //yiyecekler.unshift("Patlican");
+              
+        // document.writeln(yiyecekler[0]);
+        
+        document.writeln("<br>");
+        
+        yiyecekler.pop(); //sondaki Muz`u cikardi
+        yiyecekler.shift(); //bastaki Jelibonu cikardi. 
+        
+        
+        for (let i = 0; i < yiyecekler.length; i++) {
+            document.writeln(yiyecekler[i] + "<br>");
+        }
+        document.writeln(yiyecekler.indexOf("Muz"));        
+        document.writeln("<br>");
+        document.writeln(yiyecekler.indexOf("Ekmek"));
+        document.writeln("<br>");
+        document.writeln(yiyecekler.indexOf("Yogurt"));
+        document.writeln("<br>");
+        document.writeln(yiyecekler.indexOf("Kivi"));
+        document.writeln("<br>");
+        document.writeln(yiyecekler.indexOf("Domates"));
+        document.writeln("<br>");
+        document.writeln(yiyecekler.indexOf("Muz"));
+        document.writeln("<br>");
+        document.writeln(yiyecekler.indexOf("Jelibon"));
+        document.writeln("<br>");
+        
+        let index = yiyecekler.indexOf("Balik");
+
+        if (index ==-1) {
+            document.writeln("Aradiginiz ifade bulunamadi.")
+        }
+        else{
+            //index numarasi ya da eleman kullaniciya gosterilebilir.
+        }
+        // console.log(yiyecekler[3]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

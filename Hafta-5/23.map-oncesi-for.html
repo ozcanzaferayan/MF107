@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: midnightblue;
+            color: white;
+            font-size: xx-large;
+        }
+    </style>
+    <script>
+        //map oncesi kullanim
+
+        // const isimler = ["Moshi", "Eva", "Serkan"];
+
+        // let merhabaliIsimler= [];
+        // for (let i = 0; i < isimler.length; i++) {
+        //     // document.writeln(`${isimler[i]}  <br>`);
+        //     merhabaliIsimler.push(`Merhaba ${isimler[i]}  <br>`)
+        //     document.writeln(`${merhabaliIsimler[i]}`)            
+        // }
+
+
+        //map sonrasi kullanim
+
+        const adlar = ["Uzeyir" , "Ali", "Sultan"];
+
+        const merhabaliAdlar = adlar.map(function(isim) {
+            return `Merhaba ${isim}`;
+        });
+       
+        document.writeln(merhabaliAdlar.join(" "));
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

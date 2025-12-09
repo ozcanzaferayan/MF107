@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+</head>
+
+<body>
+    <ul id="pokemonsUL">
+        <li><a href=""></a></li>
+    </ul>
+
+    <script>
+
+        //Elamanlarin getirilmesi
+
+        const pokemonsUl = document.getElementById("pokemonsUL");
+
+        //Aksiyonlarin alinmasi
+
+        async function getPokemons() {
+            const API_URL = "https://pokeapi.co/api/v2/pokemon?limit=10";
+            const respond = await fetch(API_URL);
+            const data = await respond.json();
+            const pokemons = data.results;
+            const htmlArray = pokemons.map((pokemon) => `<li><a href="${pokemon.url}">${pokemon.name}</a></li>`);           
+            const htmlString = htmlArray.join(" ");
+            pokemonsUl.innerHTML = htmlString;
+        }
+        //Ekrana Gosterme Islemini Gerceklestirecegiz.
+        getPokemons();
+
+
+    </script>
+</body>
+
+</html>

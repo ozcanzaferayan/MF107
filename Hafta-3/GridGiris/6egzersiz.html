@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+            background-color: antiquewhite;
+            gap:15px;
+            height: 400px;
+            padding: 10px;        
+            text-align: center;   
+        }
+        .header{
+            grid-column: 1 / span 2;
+            background-color: tomato;
+            color: white;            
+        }
+        .sidebar{
+            /*1. sutuna yerles */
+            grid-column: 1;
+            /* 2. satira yerles */
+            grid-row: 2;
+            background-color: mediumseagreen;
+            color: white;
+        }
+        .main{
+            grid-column: 2;
+            grid-row: 2;
+            background-color: dodgerblue;
+            color: white;
+        }
+        .footer{
+            background-color: blueviolet;
+            grid-column: 1 / span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

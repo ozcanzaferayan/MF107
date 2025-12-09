@@ -1,0 +1,21 @@
+{
+  "name": "ilk-odevim",
+  "version": "1.0.0",
+  "description": "NodeJS projesi çalıştırma pratigidir",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "homework",
+    "basics"
+  ],
+  "author": "Zafer AYAN",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4"
+  }
+}

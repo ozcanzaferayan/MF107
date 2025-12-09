@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <input id="name"  type="text" placeholder="Dizi Ismi Giriniz">
+    <button id="btn">Ekle</button>
+
+    <ul id="liste">
+
+    </ul>
+
+
+    <script>
+        
+        const btn = document.getElementById("btn");
+        const name = document.getElementById("name");
+        const list = document.getElementById("liste");
+
+        //inputtan degeri (value) alinacak.
+        //li degiskenine gelen degeri atayacagiz.
+        //liste elemanini yazdiriyoruz.
+        //input text`i sifirlanir
+
+        btn.addEventListener("click", function () {
+            const li = document.createElement("li");
+            li.innerText = name.value;
+            if (name.value ==="") {
+                alert("Bir deger girmelisiniz.");
+                return;
+            }
+            name.value = "";
+            list.appendChild(li);
+        });
+
+        
+
+
+    </script>
+</body>
+</html>

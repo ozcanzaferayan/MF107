@@ -1,0 +1,7 @@
+{
+  "foods": [
+    { "id": "1", "name": "Lahmacun" },
+    { "id": "2", "name": "Adana Kebap" },
+    { "id": "3", "name": "Gözleme" }
+  ]
+}

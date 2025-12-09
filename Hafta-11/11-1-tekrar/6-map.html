@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="root"></ul>
+
+    <script>
+      const numbers = [1, 2, 3, 4, 5, 6];
+      // Yeni bir array üretelim ve Person 1 Person 2 Person 3
+      // <li>Person 1</li><li>Person 2</li><li>Person 3</li>
+      const people = numbers.map((number) => `<li>Person ${number}</li>`);
+      const peopleString = people.join("");
+      const root = document.getElementById("root");
+      root.innerHTML = peopleString;
+    </script>
+  </body>
+</html>
