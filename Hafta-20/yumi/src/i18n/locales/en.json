@@ -1,0 +1,45 @@
+{
+  "app": {
+    "name": "Yumi"
+  },
+  "tabs": {
+    "home": "Home",
+    "settings": "Settings",
+    "community": "Community"
+  },
+  "mood": {
+    "sleepy": {
+      "message": "Let's slow down together and take some deep breaths."
+    },
+    "bored": {
+      "message": "Opening the window and looking at the sky might help."
+    },
+    "sad": {
+      "message": "I'm here with you, no rush."
+    },
+    "happy": {
+      "message": "This moment feels really nice."
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "music": {
+      "label": "Background Music"
+    },
+    "sfx": {
+      "label": "Sound Effects"
+    },
+    "notifications": {
+      "label": "Notifications"
+    },
+    "darkmode": {
+      "label": "Dark Mode"
+    },
+    "voice": {
+      "label": "Yumi Speaks"
+    },
+    "language": {
+      "label": "Language"
+    }
+  }
+}

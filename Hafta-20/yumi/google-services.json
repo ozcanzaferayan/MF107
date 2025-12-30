@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "203561082194",
+    "project_id": "yumi-fea74",
+    "storage_bucket": "yumi-fea74.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203561082194:android:2c5bc1193a020985c16e8b",
+        "android_client_info": {
+          "package_name": "com.zaferayan.yumi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD19Z0HCGzr6V4FLd3oqpRG6kY1UOXN5pI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,45 @@
+{
+  "app": {
+    "name": "Yumi"
+  },
+  "tabs": {
+    "home": "Ana Sayfa",
+    "settings": "Ayarlar",
+    "community": "Topluluk"
+  },
+  "mood": {
+    "sleepy": {
+      "message": "Hadi şimdi duraksayalım ve nefes alıp verelim."
+    },
+    "bored": {
+      "message": "Pencereyi aç ve gökyüzüne bakalım."
+    },
+    "sad": {
+      "message": "Böyle hissetmen çok normal."
+    },
+    "happy": {
+      "message": "Gülümsediğini görmek güzel."
+    }
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "music": {
+      "label": "Arka Plan Müziği"
+    },
+    "sfx": {
+      "label": "Ses Efektleri"
+    },
+    "notifications": {
+      "label": "Bildirimler"
+    },
+    "darkmode": {
+      "label": "Karanlık Mod"
+    },
+    "voice": {
+      "label": "Yumi Konuşsun"
+    },
+    "language": {
+      "label": "Dil"
+    }
+  }
+}
